@@ -1,0 +1,44 @@
+body {
+    margin: 10px;
+  }
+  
+  .clickme {
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 0.5em 0.75em;
+    border-radius: 50px;
+    backdrop-filter: invert(1);
+  }
+  
+  .clickme:hover {
+    background-color: darkblue;
+  }
+  
+  #popup {
+    background-color: skyblue;
+    opacity: 0;
+    display: none;    
+    border-radius: 50px;
+    max-width: 600px;
+    position: relative;
+  }
+  #popup.show {
+    opacity: 1;
+    animation: fade-in 0.5s forwards;
+    display: block;
+  }
+  
+  #popup.closing {
+    animation: fade-out 0.5s forwards;
+    display: block;
+  }
+  #close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
